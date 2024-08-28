@@ -1,0 +1,65 @@
+﻿using Domain.Entities;
+using Infrastructure;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.EntityFrameworkCore.Design;
+using Microsoft.EntityFrameworkCore.Migrations;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace Infrastructure
+{
+    public class AppDbContext : DbContext
+    {
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        {
+
+        }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<ProductCategory> ProductCategories { get; set; }
+        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken()) // hàm này được gọi để cập nhật dữ liệu
+        {
+            OnBeforeSaving();
+            return base.SaveChangesAsync(cancellationToken);
+        }
+        private void OnBeforeSaving() // function your's define
+        {
+            IEnumerable<EntityEntry> entries = ChangeTracker.Entries();
+            DateTime utcNow = DateTime.UtcNow;
+
+            foreach (EntityEntry entry in entries)
+            {
+                switch (entry.State)
+                {
+                    case EntityState.Modified:
+                        // Set UpdatedDate to current date/time for updated entities
+                        entry.Property("UpdatedDate").CurrentValue = utcNow;
+                        break;
+                    case EntityState.Added:
+                        // Set CreatedDate and UpdatedDate to current date/time for new entities
+                        entry.Property("CreatedDate").CurrentValue = utcNow;
+                        entry.Property("UpdatedDate").CurrentValue = utcNow;
+                        break;
+                    case EntityState.Detached:
+                        break;
+                    case EntityState.Unchanged:
+                        break;
+                    case EntityState.Deleted:
+                        break;
+                    default:
+                        throw new ArgumentOutOfRangeException();
+                }
+            }
+        }
+    }
+}
+public class AppDbContextFactory : IDesignTimeDbContextFactory<AppDbContext>
+{
+    public AppDbContext CreateDbContext(string[] args)
+    {
+        var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
+        optionsBuilder
+            .UseSqlServer("Data Source=.;Initial Catalog=Product;Integrated Security=True;TrustServerCertificate=True");
+        return new AppDbContext(optionsBuilder.Options);
+    }
+}
