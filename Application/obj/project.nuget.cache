@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "R+SA2fn+HJ+1/qDxG4shLTORyJXkfQ2/i3B3Zb9S2DLq21mcKFInZYtlz4AdGSCgo92MUH98pw+bOgYUpYOfFw==",
+  "dgSpecHash": "JAz0WF2yGn/5zhbfpM8h55dyTKMhAL2vCP9/pNEi2952+iw7BsD1Sg0gEvGvC25m7tAqlFIw3BcwsMoIUR7bQQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Welcome\\Desktop\\New folder\\Application\\Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Welcome\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
+    "C:\\Users\\Welcome\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Welcome\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\Welcome\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Welcome\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

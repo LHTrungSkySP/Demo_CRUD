@@ -3,8 +3,6 @@ using Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Design;
-using Microsoft.EntityFrameworkCore.Migrations;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Infrastructure
 {
