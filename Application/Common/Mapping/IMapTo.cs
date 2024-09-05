@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace Application.Common.Mapping
 {
-    internal interface IMapTo<T>
+    //map dữ liệu của instance hiện tại ( instacnce đang triển khai interface này ) vào T 
+    public interface IMapTo<T>
     {
         void Mapping(Profile profile)
         {

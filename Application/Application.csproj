@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -11,8 +11,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Categories\" />
-    <Folder Include="Products\" />
+    <Folder Include="Categories\Dto\" />
+    <Folder Include="Categories\QueryHandlers\" />
+    <Folder Include="Categories\Queries\" />
+    <Folder Include="Products\CommandHandlers\" />
+    <Folder Include="Products\Commands\" />
+    <Folder Include="Products\Dto\" />
+    <Folder Include="Products\Queries\" />
+    <Folder Include="Products\QueryHandlers\" />
   </ItemGroup>
 
 </Project>

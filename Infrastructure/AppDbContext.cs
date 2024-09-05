@@ -15,7 +15,8 @@ namespace Infrastructure
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductCategory> ProductCategories { get; set; }
-        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken()) // hàm này được gọi để cập nhật dữ liệu
+        // ghi đè để trước khi lưu data, cập nhật ngày tháng
+        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken()) 
         {
             OnBeforeSaving();
             return base.SaveChangesAsync(cancellationToken);

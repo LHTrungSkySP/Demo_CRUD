@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Application.Common.Mapping
 {
-    internal interface IMapFrom<T>
+    public interface IMapFrom<T>
     {
         void Mapping(Profile profile)
         {
