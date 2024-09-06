@@ -11,9 +11,6 @@ using System.Reflection;
 // - ConstructorInfo: cung cấp thông tin Constructor // ConstructorInfo constructorInfo = type.GetConstructor(new Type[] { typeof(int) });
 // - Assembly: cung cấp thông tin của assembly hiện tại ( thường là các file dll, các file này thường đại diện cho một dự án )
 ///
-
-
-
 namespace Application.Common.Mapping
 {
     public class AutoMapperProfile : Profile
