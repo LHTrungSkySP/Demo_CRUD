@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Welcome\\Desktop\\New folder\\Application\\Application.csproj": {}
+    "C:\\Users\\Le Trung\\Desktop\\Demo_CRUD\\Application\\Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Welcome\\Desktop\\New folder\\Application\\Application.csproj": {
+    "C:\\Users\\Le Trung\\Desktop\\Demo_CRUD\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Welcome\\Desktop\\New folder\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\Le Trung\\Desktop\\Demo_CRUD\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\Welcome\\Desktop\\New folder\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\Welcome\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Welcome\\Desktop\\New folder\\Application\\obj\\",
+        "projectPath": "C:\\Users\\Le Trung\\Desktop\\Demo_CRUD\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\Le Trung\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Le Trung\\Desktop\\Demo_CRUD\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Welcome\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Le Trung\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,14 +28,14 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Welcome\\Desktop\\New folder\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\Welcome\\Desktop\\New folder\\Common\\Common.csproj"
+              "C:\\Users\\Le Trung\\Desktop\\Demo_CRUD\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\Le Trung\\Desktop\\Demo_CRUD\\Common\\Common.csproj"
               },
-              "C:\\Users\\Welcome\\Desktop\\New folder\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Welcome\\Desktop\\New folder\\Domain\\Domain.csproj"
+              "C:\\Users\\Le Trung\\Desktop\\Demo_CRUD\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Le Trung\\Desktop\\Demo_CRUD\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\Welcome\\Desktop\\New folder\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Welcome\\Desktop\\New folder\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\Le Trung\\Desktop\\Demo_CRUD\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Le Trung\\Desktop\\Demo_CRUD\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -75,21 +75,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Welcome\\Desktop\\New folder\\Common\\Common.csproj": {
+    "C:\\Users\\Le Trung\\Desktop\\Demo_CRUD\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Welcome\\Desktop\\New folder\\Common\\Common.csproj",
+        "projectUniqueName": "C:\\Users\\Le Trung\\Desktop\\Demo_CRUD\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\Welcome\\Desktop\\New folder\\Common\\Common.csproj",
-        "packagesPath": "C:\\Users\\Welcome\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Welcome\\Desktop\\New folder\\Common\\obj\\",
+        "projectPath": "C:\\Users\\Le Trung\\Desktop\\Demo_CRUD\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\Le Trung\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Le Trung\\Desktop\\Demo_CRUD\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Welcome\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Le Trung\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -130,21 +130,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Welcome\\Desktop\\New folder\\Domain\\Domain.csproj": {
+    "C:\\Users\\Le Trung\\Desktop\\Demo_CRUD\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Welcome\\Desktop\\New folder\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Le Trung\\Desktop\\Demo_CRUD\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Welcome\\Desktop\\New folder\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Welcome\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Welcome\\Desktop\\New folder\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\Le Trung\\Desktop\\Demo_CRUD\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Le Trung\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Le Trung\\Desktop\\Demo_CRUD\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Welcome\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Le Trung\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -185,21 +185,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Welcome\\Desktop\\New folder\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\Le Trung\\Desktop\\Demo_CRUD\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Welcome\\Desktop\\New folder\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Le Trung\\Desktop\\Demo_CRUD\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\Welcome\\Desktop\\New folder\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Welcome\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Welcome\\Desktop\\New folder\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\Le Trung\\Desktop\\Demo_CRUD\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Le Trung\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Le Trung\\Desktop\\Demo_CRUD\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Welcome\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Le Trung\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -213,8 +213,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Welcome\\Desktop\\New folder\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Welcome\\Desktop\\New folder\\Domain\\Domain.csproj"
+              "C:\\Users\\Le Trung\\Desktop\\Demo_CRUD\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Le Trung\\Desktop\\Demo_CRUD\\Domain\\Domain.csproj"
               }
             }
           }
@@ -260,7 +260,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
