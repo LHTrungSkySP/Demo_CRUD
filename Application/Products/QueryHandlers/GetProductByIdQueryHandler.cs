@@ -4,6 +4,7 @@ using Application.Products.Dto;
 using Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Application.Products.Queries;
+using Common.Exceptions;
 
 namespace Application.Products.QueryHandlers
 {
@@ -22,7 +23,10 @@ namespace Application.Products.QueryHandlers
         {
             var product = await _context.Products
                 .FirstOrDefaultAsync(p => p.Id == request.Id, cancellationToken);
-
+            if (product != null)
+            {
+                throw new AppException(ExceptionCode.Notfound, "Không tìm thấy sản phẩm");
+            }
             return _mapper.Map<ProductDto>(product);
         }
     }

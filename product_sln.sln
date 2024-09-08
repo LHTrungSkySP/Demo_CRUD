@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.Test", "Application.Test\Application.Test.csproj", "{E59C9AC0-07C5-49BB-B924-09E01076E7F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unitilities", "Unitilities\Unitilities.csproj", "{609469C0-75E5-4CB8-A713-60FE0B7091AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unitilities", "Unitilities\Unitilities.csproj", "{609469C0-75E5-4CB8-A713-60FE0B7091AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{8219810B-1059-46B7-A39F-5B0CCC67A325}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{8219810B-1059-46B7-A39F-5B0CCC67A325}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prodcut.API", "Prodcut.API\Prodcut.API.csproj", "{82A08460-C355-4150-8FEE-C6A5BE063358}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{8219810B-1059-46B7-A39F-5B0CCC67A325}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8219810B-1059-46B7-A39F-5B0CCC67A325}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8219810B-1059-46B7-A39F-5B0CCC67A325}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82A08460-C355-4150-8FEE-C6A5BE063358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82A08460-C355-4150-8FEE-C6A5BE063358}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82A08460-C355-4150-8FEE-C6A5BE063358}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82A08460-C355-4150-8FEE-C6A5BE063358}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
