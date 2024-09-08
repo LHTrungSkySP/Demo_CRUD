@@ -1,12 +1,11 @@
-﻿using MediatR;
-using Application.Common.Mapping;
+﻿using Application.Common.Mapping;
 using Domain.Entities;
-using Application.Categories.Dto;
 
-namespace Application.Categories.Commands
+namespace Application.Categories.Dto
 {
-    public class CreateCategoryCommand : IRequest<CategoryDto>, IMapTo<Category>
+    public class CategoryDto : IMapFrom<Category>
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public string SeoAlias { get; set; }
         public string SeoTitle { get; set; }
