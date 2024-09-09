@@ -23,7 +23,7 @@ namespace Application.Products.QueryHandlers
         {
             var product = await _context.Products
                 .FirstOrDefaultAsync(p => p.Id == request.Id, cancellationToken);
-            if (product != null)
+            if (product == null)
             {
                 throw new AppException(ExceptionCode.Notfound, "Không tìm thấy sản phẩm");
             }

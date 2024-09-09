@@ -8,8 +8,10 @@ namespace Application
     {
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
+            Assembly assembly = Assembly.GetExecutingAssembly();
             // Đăng ký MediatR với Assembly hiện tại (Application)
-            services.AddMediatR(Assembly.GetExecutingAssembly());
+            services.AddAutoMapper(assembly);
+            services.AddMediatR(assembly);
             return services;
         }
     }

@@ -4,63 +4,45 @@ using Application.Products.Commands;
 using Application.Products.Queries;
 using Application.Products.Dto;
 using Common.Models;
+using Prodcut.API;
 
 namespace Product.API.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class ProductsController : ControllerBase
+    public class ProductsController : ApiControllerBase
     {
-        private readonly IMediator _mediator;
-
-        public ProductsController(IMediator mediator)
-        {
-            _mediator = mediator;
-        }
-
         // Get all products with pagination
         [HttpGet]
-        public async Task<ActionResult<PaginatedList<ProductDto>>> GetAll([FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 10)
+        public async Task<ActionResult<PaginatedList<ProductDto>>> GetAll([FromQuery] GetProductsQuery command)
         {
-            var query = new GetProductsQuery { PageIndex = pageNumber, PageSize = pageSize };
-            var result = await _mediator.Send(query);
-            return Ok(result);
+            return await Mediator.Send(command);
         }
 
         // Get product by ID
-        [HttpGet("{id}")]
-        public async Task<ActionResult<ProductDto>> GetById(int id)
+        [HttpGet("Get-by-id")]
+        public async Task<ActionResult<ProductDto>> GetById([FromQuery] GetProductByIdQuery command)
         {
-            var query = new GetProductByIdQuery { Id = id };
-            var result = await _mediator.Send(query);
-            if (result == null) return NotFound();
-            return Ok(result);
+            return await Mediator.Send(command);
         }
 
         // Create a new product
         [HttpPost]
         public async Task<ActionResult<ProductDto>> Create(CreateProductCommand command)
         {
-            var result = await _mediator.Send(command);
-            return CreatedAtAction(nameof(GetById), new { id = result.Id }, result);
+            return await Mediator.Send(command);
         }
 
         // Update an existing product
-        [HttpPut("{id}")]
-        public async Task<ActionResult<ProductDto>> Update(int id, UpdateProductCommand command)
+        [HttpPut]
+        public async Task<ActionResult<ProductDto>> Update(UpdateProductCommand command)
         {
-            if (id != command.Id) return BadRequest();
-            var result = await _mediator.Send(command);
-            return Ok(result);
+            return await Mediator.Send(command);
         }
 
         // Delete a product
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
+        [HttpDelete]
+        public async Task<ActionResult<ProductDto>> Delete(DeleteProductCommand command)
         {
-            var command = new DeleteProductCommand { Id = id };
-            await _mediator.Send(command);
-            return NoContent();
+            return await Mediator.Send(command);
         }
     }
 }
