@@ -17,7 +17,7 @@ namespace Prodcut.API.Controllers
         {
             try
             {
-                return StatusCode(StatusCodes.Status200OK, _mediaService.UploadImage(file));
+                return Ok(_mediaService.UploadImage(file));
             }
             catch (Exception ex)
             {
@@ -29,7 +29,7 @@ namespace Prodcut.API.Controllers
         {
             try
             {
-                return StatusCode(StatusCodes.Status200OK, _mediaService.UploadImages(files));
+                return Ok(_mediaService.UploadImages(files));
             }
             catch (Exception ex)
             {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using System.IO;
-
+using System.Reflection;
 
 namespace Common.Services.MediaService
 {
@@ -9,8 +9,8 @@ namespace Common.Services.MediaService
         public async Task<string> UploadImage(IFormFile file)
         {
             var dateTimeNow = DateTime.Now.ToString("dd_MM_yyyy");
-
-            var mediaFolder = Path.Combine($"Uploads\\Images\\{dateTimeNow}");
+            string applicationPath = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+            var mediaFolder = Path.Combine(applicationPath, $"Uploads\\Images\\{dateTimeNow}");
             if (!Directory.Exists(mediaFolder))
             {
                 Directory.CreateDirectory(mediaFolder);
@@ -32,7 +32,9 @@ namespace Common.Services.MediaService
         public async Task<List<string>> UploadImages(List<IFormFile> files)
         {
             var dateTimeNow = DateTime.Now.ToString("dd_MM_yyyy");
-            var mediaFolder = Path.Combine($"Uploads\\Images\\{dateTimeNow}");
+            string applicationPath = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+
+            var mediaFolder = Path.Combine(applicationPath, $"Uploads\\Images\\{dateTimeNow}");
             if (!Directory.Exists(mediaFolder))
             {
                 Directory.CreateDirectory(mediaFolder);
